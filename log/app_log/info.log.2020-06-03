@@ -1,0 +1,39 @@
+03-06-20 19:22:17,456 590 0    [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@3043fe0e: startup date [Wed Jun 03 19:22:17 ICT 2020]; root of context hierarchy
+03-06-20 19:22:17,628 316 172  [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:.//config/Beans.xml]
+03-06-20 19:22:18,261 80 805  [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Starting...
+03-06-20 19:22:18,789 82 1333 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Start completed.
+03-06-20 19:22:19,455 66 1999 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+03-06-20 19:22:19,470 54 2014 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.7.Final}
+03-06-20 19:22:19,476 239 2020 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+03-06-20 19:22:19,480 346 2024 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+03-06-20 19:22:20,094 145 2638 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-06-20 19:22:20,556 62 3100 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-06-20 19:22:20,570 47 3114 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+03-06-20 19:22:20,738 21 3282 [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.9.Final
+03-06-20 19:46:05,404 590 1247 [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@56cdfb3b: startup date [Wed Jun 03 19:46:05 ICT 2020]; root of context hierarchy
+03-06-20 19:46:05,694 316 1537 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:.//config/Beans.xml]
+03-06-20 19:46:06,685 80 2528 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Starting...
+03-06-20 19:46:07,761 82 3604 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Start completed.
+03-06-20 19:46:09,206 66 5049 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+03-06-20 19:46:09,241 54 5084 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.7.Final}
+03-06-20 19:46:09,258 239 5101 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+03-06-20 19:46:09,270 346 5113 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+03-06-20 19:46:10,295 145 6138 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-06-20 19:46:10,961 62 6804 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-06-20 19:46:10,982 47 6825 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+03-06-20 19:46:11,192 21 7035 [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.9.Final
+03-06-20 19:47:33,814 194 89657 [main] INFO  org.nd4j.linalg.factory.Nd4jBackend  - Loaded [CpuBackend] backend
+03-06-20 19:47:35,237 229 91080 [main] INFO  org.reflections.Reflections  - Reflections took 1262 ms to scan 324 urls, producing 130809 keys and 144376 values 
+03-06-20 19:47:35,673 49 91516 [main] INFO  org.nd4j.nativeblas.NativeOpsHolder  - Number of threads used for NativeOps: 2
+03-06-20 19:47:35,792 229 91635 [main] INFO  org.reflections.Reflections  - Reflections took 111 ms to scan 10 urls, producing 31 keys and 227 values 
+03-06-20 19:47:36,245 37 92088 [main] INFO  org.nd4j.nativeblas.Nd4jBlas  - Number of threads used for BLAS: 2
+03-06-20 19:47:36,248 565 92091 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Backend used: [CPU]; OS: [Mac OS X]
+03-06-20 19:47:36,248 566 92091 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Cores: [4]; Memory: [2.2GB];
+03-06-20 19:47:36,248 567 92091 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Blas vendor: [OPENBLAS]
+03-06-20 19:47:36,549 229 92392 [main] INFO  org.reflections.Reflections  - Reflections took 257 ms to scan 10 urls, producing 387 keys and 1538 values 
+03-06-20 19:47:36,582 43 92425 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load test dataset...
+03-06-20 19:47:36,583 46 92426 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Build lstm networks...
+03-06-20 19:47:47,549 229 103392 [main] INFO  org.reflections.Reflections  - Reflections took 10274 ms to scan 314 urls, producing 7224 keys and 41563 values 
+03-06-20 19:47:47,712 56 103555 [main] INFO  org.deeplearning4j.nn.multilayer.MultiLayerNetwork  - Starting MultiLayerNetwork with WorkspaceModes set to [training: NONE; inference: SEPARATE]
+03-06-20 19:47:47,873 49 103716 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Training...
+03-06-20 19:47:49,080 64 104923 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 0 is 4.3973144280699845

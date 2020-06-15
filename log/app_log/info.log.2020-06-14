@@ -1,0 +1,702 @@
+14-06-20 21:38:21,168 38 0    [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Create dataSet iterator...
+14-06-20 21:38:21,914 590 746  [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@50d0686: startup date [Sun Jun 14 21:38:21 ICT 2020]; root of context hierarchy
+14-06-20 21:38:22,247 316 1079 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:.//config/Beans.xml]
+14-06-20 21:39:04,889 38 0    [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Create dataSet iterator...
+14-06-20 21:39:05,529 590 640  [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@50d0686: startup date [Sun Jun 14 21:39:05 ICT 2020]; root of context hierarchy
+14-06-20 21:39:05,726 316 837  [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:.//config/Beans.xml]
+14-06-20 21:39:06,324 80 1435 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Starting...
+14-06-20 21:39:07,136 82 2247 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Start completed.
+14-06-20 21:39:07,886 66 2997 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+14-06-20 21:39:07,907 54 3018 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.7.Final}
+14-06-20 21:39:07,917 239 3028 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+14-06-20 21:39:07,925 346 3036 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+14-06-20 21:39:08,396 145 3507 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14-06-20 21:39:09,029 62 4140 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+14-06-20 21:39:09,049 47 4160 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+14-06-20 21:39:09,244 21 4355 [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.9.Final
+14-06-20 21:39:14,432 194 9543 [main] INFO  org.nd4j.linalg.factory.Nd4jBackend  - Loaded [CpuBackend] backend
+14-06-20 21:39:15,965 229 11076 [main] INFO  org.reflections.Reflections  - Reflections took 1396 ms to scan 323 urls, producing 130798 keys and 144333 values 
+14-06-20 21:39:16,963 49 12074 [main] INFO  org.nd4j.nativeblas.NativeOpsHolder  - Number of threads used for NativeOps: 2
+14-06-20 21:39:17,120 229 12231 [main] INFO  org.reflections.Reflections  - Reflections took 144 ms to scan 10 urls, producing 31 keys and 227 values 
+14-06-20 21:39:17,642 37 12753 [main] INFO  org.nd4j.nativeblas.Nd4jBlas  - Number of threads used for BLAS: 2
+14-06-20 21:39:17,645 565 12756 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Backend used: [CPU]; OS: [Mac OS X]
+14-06-20 21:39:17,646 566 12757 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Cores: [4]; Memory: [2.2GB];
+14-06-20 21:39:17,646 567 12757 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Blas vendor: [OPENBLAS]
+14-06-20 21:39:18,269 229 13380 [main] INFO  org.reflections.Reflections  - Reflections took 552 ms to scan 10 urls, producing 387 keys and 1538 values 
+14-06-20 21:39:18,302 38 13413 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load test dataset...
+14-06-20 21:39:18,302 38 13413 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Build lstm networks...
+14-06-20 21:39:29,418 229 24529 [main] INFO  org.reflections.Reflections  - Reflections took 10456 ms to scan 313 urls, producing 7215 keys and 41552 values 
+14-06-20 21:39:29,552 56 24663 [main] INFO  org.deeplearning4j.nn.multilayer.MultiLayerNetwork  - Starting MultiLayerNetwork with WorkspaceModes set to [training: NONE; inference: SEPARATE]
+14-06-20 21:39:29,699 38 24810 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Training...
+14-06-20 21:39:31,410 64 26521 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 0 is 4.3973144280699845
+14-06-20 21:41:08,662 64 123773 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 100 is 0.2820339334008426
+14-06-20 21:42:33,406 64 208517 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 200 is 0.0961785032150548
+14-06-20 21:44:03,292 64 298403 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 300 is 0.044135901862532224
+14-06-20 21:45:47,410 64 402521 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 400 is 0.060428949045563354
+14-06-20 21:47:13,339 64 488450 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 500 is 0.15389509690509623
+14-06-20 21:48:27,714 64 562825 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 600 is 0.16137287825053231
+14-06-20 21:49:42,984 64 638095 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 700 is 0.2877316244579328
+14-06-20 21:51:00,398 64 715509 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 800 is 0.17395593493508452
+14-06-20 21:52:15,279 38 790390 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Saving model...
+14-06-20 21:52:16,036 38 791147 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load model...
+14-06-20 21:52:16,323 38 791434 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Testing...
+14-06-20 21:52:16,689 38 791800 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Print out Predictions and Actual Values...
+14-06-20 21:52:16,689 38 791800 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Predict,Actual
+14-06-20 21:52:16,690 38 791801 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.523403441905977,28.100000381469727
+14-06-20 21:52:16,690 38 791801 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.719326400756835,28.100000381469727
+14-06-20 21:52:16,690 38 791801 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.65855005979538,28.100000381469727
+14-06-20 21:52:16,690 38 791801 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.53053811788559,28.100000381469727
+14-06-20 21:52:16,690 38 791801 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.537411189079286,28.100000381469727
+14-06-20 21:52:16,691 38 791802 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.58728574514389,28.100000381469727
+14-06-20 21:52:16,691 38 791802 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.65403777360916,30.100000381469727
+14-06-20 21:52:16,691 38 791802 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 30.81274814605713,30.100000381469727
+14-06-20 21:52:16,691 38 791802 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 30.75298334360123,28.899999618530273
+14-06-20 21:52:16,691 38 791802 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.541976737976075,28.899999618530273
+14-06-20 21:52:16,691 38 791802 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.547085165977478,28.899999618530273
+14-06-20 21:52:16,692 38 791803 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.505047655105592,28.899999618530273
+14-06-20 21:52:16,692 38 791803 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.537713372707366,28.899999618530273
+14-06-20 21:52:16,692 38 791803 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.5490464091301,28.899999618530273
+14-06-20 21:52:16,692 38 791803 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.554286432266238,28.899999618530273
+14-06-20 21:52:16,692 38 791803 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.551112294197083,28.899999618530273
+14-06-20 21:52:16,692 38 791803 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.54434545040131,28.899999618530273
+14-06-20 21:52:16,693 38 791804 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.535917019844057,28.899999618530273
+14-06-20 21:52:16,693 38 791804 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.52733955383301,28.899999618530273
+14-06-20 21:52:16,693 38 791804 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.51936457157135,28.899999618530273
+14-06-20 21:52:16,693 38 791804 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.512459790706636,28.899999618530273
+14-06-20 21:52:16,693 38 791804 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.506902670860292,28.899999618530273
+14-06-20 21:52:16,693 38 791804 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.502839076519013,28.899999618530273
+14-06-20 21:52:16,694 38 791805 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.50029278993607,28.899999618530273
+14-06-20 21:52:16,694 38 791805 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.49917185306549,28.899999618530273
+14-06-20 21:52:16,694 38 791805 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.499273324012755,28.899999618530273
+14-06-20 21:52:16,694 38 791805 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.500332427024844,28.899999618530273
+14-06-20 21:52:16,694 38 791805 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.5020431637764,28.899999618530273
+14-06-20 21:52:16,694 38 791805 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 29.50411539077759,27.5
+14-06-20 21:52:16,694 38 791805 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.031846463680267,27.5
+14-06-20 21:52:16,695 38 791806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.525036489963533,28.0
+14-06-20 21:52:16,695 38 791806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.51159317493439,28.0
+14-06-20 21:52:16,695 38 791806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.602989959716798,28.0
+14-06-20 21:52:16,695 38 791806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.608326697349547,28.0
+14-06-20 21:52:16,695 38 791806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.60905284881592,28.0
+14-06-20 21:52:16,695 38 791806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.604454946517947,28.0
+14-06-20 21:52:16,695 38 791806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.60399515628815,28.0
+14-06-20 21:52:16,695 38 791806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.606574738025664,28.0
+14-06-20 21:52:16,696 38 791807 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.61095860004425,28.0
+14-06-20 21:52:16,696 38 791807 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.615556502342223,28.0
+14-06-20 21:52:16,696 38 791807 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.61948057413101,28.0
+14-06-20 21:52:16,696 38 791807 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 28.622423231601715,28.0
+14-06-20 21:52:16,696 38 791807 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Plot...
+14-06-20 21:52:18,538 38 793649 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Done...
+14-06-20 22:09:08,707 38 0    [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Create dataSet iterator...
+14-06-20 22:09:09,338 590 631  [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@50d0686: startup date [Sun Jun 14 22:09:09 ICT 2020]; root of context hierarchy
+14-06-20 22:09:09,514 316 807  [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:.//config/Beans.xml]
+14-06-20 22:09:10,260 80 1553 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Starting...
+14-06-20 22:09:11,154 82 2447 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Start completed.
+14-06-20 22:09:12,009 66 3302 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+14-06-20 22:09:12,025 54 3318 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.7.Final}
+14-06-20 22:09:12,032 239 3325 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+14-06-20 22:09:12,075 346 3368 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+14-06-20 22:09:12,512 145 3805 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14-06-20 22:09:12,944 62 4237 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+14-06-20 22:09:12,962 47 4255 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+14-06-20 22:09:13,055 21 4348 [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.9.Final
+14-06-20 22:09:18,340 194 9633 [main] INFO  org.nd4j.linalg.factory.Nd4jBackend  - Loaded [CpuBackend] backend
+14-06-20 22:09:20,043 229 11336 [main] INFO  org.reflections.Reflections  - Reflections took 1499 ms to scan 323 urls, producing 130798 keys and 144333 values 
+14-06-20 22:09:20,912 49 12205 [main] INFO  org.nd4j.nativeblas.NativeOpsHolder  - Number of threads used for NativeOps: 2
+14-06-20 22:09:21,105 229 12398 [main] INFO  org.reflections.Reflections  - Reflections took 185 ms to scan 10 urls, producing 31 keys and 227 values 
+14-06-20 22:09:21,406 37 12699 [main] INFO  org.nd4j.nativeblas.Nd4jBlas  - Number of threads used for BLAS: 2
+14-06-20 22:09:21,408 565 12701 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Backend used: [CPU]; OS: [Mac OS X]
+14-06-20 22:09:21,409 566 12702 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Cores: [4]; Memory: [2.2GB];
+14-06-20 22:09:21,409 567 12702 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Blas vendor: [OPENBLAS]
+14-06-20 22:09:21,837 229 13130 [main] INFO  org.reflections.Reflections  - Reflections took 326 ms to scan 10 urls, producing 387 keys and 1538 values 
+14-06-20 22:09:21,936 38 13229 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load test dataset...
+14-06-20 22:09:21,936 38 13229 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Build lstm networks...
+14-06-20 22:09:33,652 229 24945 [main] INFO  org.reflections.Reflections  - Reflections took 10930 ms to scan 313 urls, producing 7215 keys and 41552 values 
+14-06-20 22:09:33,813 56 25106 [main] INFO  org.deeplearning4j.nn.multilayer.MultiLayerNetwork  - Starting MultiLayerNetwork with WorkspaceModes set to [training: NONE; inference: SEPARATE]
+14-06-20 22:09:33,930 38 25223 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Training...
+14-06-20 22:09:35,440 64 26733 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 0 is 4.3973144280699845
+14-06-20 22:11:18,785 64 130078 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 100 is 0.2820339334008426
+14-06-20 22:12:47,312 64 218605 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 200 is 0.0961785032150548
+14-06-20 22:16:14,044 38 0    [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Create dataSet iterator...
+14-06-20 22:16:15,016 590 972  [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@50d0686: startup date [Sun Jun 14 22:16:15 ICT 2020]; root of context hierarchy
+14-06-20 22:16:15,244 316 1200 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:.//config/Beans.xml]
+14-06-20 22:16:15,965 80 1921 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Starting...
+14-06-20 22:16:16,744 82 2700 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Start completed.
+14-06-20 22:16:17,328 66 3284 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+14-06-20 22:16:17,342 54 3298 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.7.Final}
+14-06-20 22:16:17,347 239 3303 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+14-06-20 22:16:17,354 346 3310 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+14-06-20 22:16:17,990 145 3946 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14-06-20 22:16:18,593 62 4549 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+14-06-20 22:16:18,621 47 4577 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+14-06-20 22:16:18,868 21 4824 [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.9.Final
+14-06-20 22:16:24,225 194 10181 [main] INFO  org.nd4j.linalg.factory.Nd4jBackend  - Loaded [CpuBackend] backend
+14-06-20 22:16:25,826 229 11782 [main] INFO  org.reflections.Reflections  - Reflections took 1527 ms to scan 323 urls, producing 130798 keys and 144333 values 
+14-06-20 22:16:26,739 49 12695 [main] INFO  org.nd4j.nativeblas.NativeOpsHolder  - Number of threads used for NativeOps: 2
+14-06-20 22:16:26,916 229 12872 [main] INFO  org.reflections.Reflections  - Reflections took 155 ms to scan 10 urls, producing 31 keys and 227 values 
+14-06-20 22:16:27,227 37 13183 [main] INFO  org.nd4j.nativeblas.Nd4jBlas  - Number of threads used for BLAS: 2
+14-06-20 22:16:27,230 565 13186 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Backend used: [CPU]; OS: [Mac OS X]
+14-06-20 22:16:27,230 566 13186 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Cores: [4]; Memory: [2.2GB];
+14-06-20 22:16:27,231 567 13187 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Blas vendor: [OPENBLAS]
+14-06-20 22:16:27,889 229 13845 [main] INFO  org.reflections.Reflections  - Reflections took 607 ms to scan 10 urls, producing 387 keys and 1538 values 
+14-06-20 22:16:27,929 38 13885 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load test dataset...
+14-06-20 22:16:27,931 38 13887 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Build lstm networks...
+14-06-20 22:16:38,794 229 24750 [main] INFO  org.reflections.Reflections  - Reflections took 10441 ms to scan 313 urls, producing 7215 keys and 41552 values 
+14-06-20 22:16:39,011 56 24967 [main] INFO  org.deeplearning4j.nn.multilayer.MultiLayerNetwork  - Starting MultiLayerNetwork with WorkspaceModes set to [training: NONE; inference: SEPARATE]
+14-06-20 22:16:39,134 38 25090 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Training...
+14-06-20 22:16:40,553 64 26509 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 0 is 4.3973144280699845
+14-06-20 22:18:15,811 64 121767 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 100 is 0.2820339334008426
+14-06-20 22:19:56,463 38 0    [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Create dataSet iterator...
+14-06-20 22:19:57,169 590 706  [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@50d0686: startup date [Sun Jun 14 22:19:57 ICT 2020]; root of context hierarchy
+14-06-20 22:19:57,312 316 849  [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:.//config/Beans.xml]
+14-06-20 22:19:58,012 80 1549 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Starting...
+14-06-20 22:19:58,810 82 2347 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Start completed.
+14-06-20 22:19:59,329 66 2866 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+14-06-20 22:19:59,355 54 2892 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.7.Final}
+14-06-20 22:19:59,361 239 2898 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+14-06-20 22:19:59,364 346 2901 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+14-06-20 22:19:59,840 145 3377 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14-06-20 22:20:00,305 62 3842 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+14-06-20 22:20:00,316 47 3853 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+14-06-20 22:20:00,441 21 3978 [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.9.Final
+14-06-20 22:20:05,126 194 8663 [main] INFO  org.nd4j.linalg.factory.Nd4jBackend  - Loaded [CpuBackend] backend
+14-06-20 22:20:06,344 229 9881 [main] INFO  org.reflections.Reflections  - Reflections took 1124 ms to scan 323 urls, producing 130798 keys and 144333 values 
+14-06-20 22:20:07,276 49 10813 [main] INFO  org.nd4j.nativeblas.NativeOpsHolder  - Number of threads used for NativeOps: 2
+14-06-20 22:20:07,410 229 10947 [main] INFO  org.reflections.Reflections  - Reflections took 129 ms to scan 10 urls, producing 31 keys and 227 values 
+14-06-20 22:20:07,846 37 11383 [main] INFO  org.nd4j.nativeblas.Nd4jBlas  - Number of threads used for BLAS: 2
+14-06-20 22:20:07,850 565 11387 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Backend used: [CPU]; OS: [Mac OS X]
+14-06-20 22:20:07,851 566 11388 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Cores: [4]; Memory: [2.2GB];
+14-06-20 22:20:07,852 567 11389 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Blas vendor: [OPENBLAS]
+14-06-20 22:20:08,464 229 12001 [main] INFO  org.reflections.Reflections  - Reflections took 499 ms to scan 10 urls, producing 387 keys and 1538 values 
+14-06-20 22:20:08,745 38 12282 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load test dataset...
+14-06-20 22:20:08,748 38 12285 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Build lstm networks...
+14-06-20 22:20:21,662 229 25199 [main] INFO  org.reflections.Reflections  - Reflections took 12401 ms to scan 313 urls, producing 7215 keys and 41552 values 
+14-06-20 22:20:21,855 56 25392 [main] INFO  org.deeplearning4j.nn.multilayer.MultiLayerNetwork  - Starting MultiLayerNetwork with WorkspaceModes set to [training: NONE; inference: SEPARATE]
+14-06-20 22:20:21,970 38 25507 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Training...
+14-06-20 22:20:23,489 64 27026 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 0 is 0.5160658347396011
+14-06-20 22:22:15,291 64 138828 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 100 is 0.38738902056201047
+14-06-20 22:23:45,658 64 229195 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 200 is 0.06516927860771894
+14-06-20 22:25:07,307 64 310844 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 300 is 0.027508826016397005
+14-06-20 22:26:35,398 64 398935 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 400 is 0.012067860658216323
+14-06-20 22:28:04,177 64 487714 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 500 is 0.06940459042961132
+14-06-20 22:29:23,915 64 567452 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 600 is 0.01127391631266302
+14-06-20 22:30:43,066 64 646603 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 700 is 0.00794124044997445
+14-06-20 22:32:10,920 64 734457 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 800 is 0.08988364380366283
+14-06-20 22:33:33,929 64 817466 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 900 is 0.10611653546446308
+14-06-20 22:35:07,097 64 910634 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1000 is 0.1743523647205856
+14-06-20 22:36:30,753 64 994290 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1100 is 0.06264141619927545
+14-06-20 22:37:52,331 64 1075868 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1200 is 0.15788011758061443
+14-06-20 22:39:11,705 64 1155242 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1300 is 0.005267636630156898
+14-06-20 22:40:32,197 64 1235734 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1400 is 0.17668695620734196
+14-06-20 22:41:50,702 64 1314239 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1500 is 0.017457045261198935
+14-06-20 22:43:11,469 64 1395006 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1600 is 0.010727507701127454
+14-06-20 22:44:33,885 64 1477422 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1700 is 0.07480282317369422
+14-06-20 22:45:52,119 64 1555656 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1800 is 0.06412573617007954
+14-06-20 22:47:17,499 64 1641036 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1900 is 0.09417742292762006
+14-06-20 22:48:44,159 64 1727696 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 2000 is 0.008626086372648622
+14-06-20 22:50:08,756 64 1812293 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 2100 is 0.06111044051306976
+14-06-20 22:51:31,509 64 1895046 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 2200 is 0.009539949602363654
+14-06-20 22:52:54,406 64 1977943 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 2300 is 0.014153206822381003
+14-06-20 22:54:16,017 64 2059554 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 2400 is 0.08879748070180427
+14-06-20 22:55:40,034 64 2143571 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 2500 is 0.06453394173794842
+14-06-20 22:57:02,254 64 2225791 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 2600 is 0.01035015506011579
+14-06-20 22:58:24,968 64 2308505 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 2700 is 0.058933093669848564
+14-06-20 22:59:57,728 64 2401265 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 2800 is 0.04240238018833399
+14-06-20 23:01:15,438 64 2478975 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 2900 is 0.009974107261329846
+14-06-20 23:02:32,069 64 2555606 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 3000 is 0.018880769731602715
+14-06-20 23:03:48,540 64 2632077 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 3100 is 0.07993588540347754
+14-06-20 23:05:09,360 64 2712897 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 3200 is 0.019064383682537617
+14-06-20 23:06:27,147 64 2790684 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 3300 is 0.08534686386916653
+14-06-20 23:07:45,210 64 2868747 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 3400 is 0.041344025755174825
+14-06-20 23:09:03,069 64 2946606 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 3500 is 0.0797240095731766
+14-06-20 23:10:23,920 64 3027457 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 3600 is 0.015006749524869295
+14-06-20 23:11:39,213 64 3102750 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 3700 is 0.07236166035325799
+14-06-20 23:13:07,054 64 3190591 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 3800 is 0.01770368913494031
+14-06-20 23:14:26,177 38 3269714 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Saving model...
+14-06-20 23:14:26,935 38 3270472 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load model...
+14-06-20 23:14:27,225 38 3270762 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Testing...
+14-06-20 23:14:27,225 38 3270762 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Test data size:256
+14-06-20 23:14:30,224 38 3273761 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Print out Predictions and Actual Values...
+14-06-20 23:14:30,224 38 3273761 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Predict,Actual
+14-06-20 23:14:30,225 38 3273762 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.54338915735483,19.350000381469727
+14-06-20 23:14:30,225 38 3273762 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.77150633096695,19.350000381469727
+14-06-20 23:14:30,225 38 3273762 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 19.2244834125042,18.899999618530273
+14-06-20 23:14:30,230 38 3273767 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.594707885980608,18.5
+14-06-20 23:14:30,230 38 3273767 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.528546336591244,17.75
+14-06-20 23:14:30,230 38 3273767 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.60121841788292,17.299999237060547
+14-06-20 23:14:30,230 38 3273767 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.720219440460205,17.399999618530273
+14-06-20 23:14:30,231 38 3273768 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.763989530205727,17.350000381469727
+14-06-20 23:14:30,231 38 3273768 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.49169774115086,17.299999237060547
+14-06-20 23:14:30,231 38 3273768 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.45333699345589,17.75
+14-06-20 23:14:30,231 38 3273768 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.77010022312403,18.149999618530273
+14-06-20 23:14:30,231 38 3273768 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.897800660431386,18.350000381469727
+14-06-20 23:14:30,231 38 3273768 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.78926575571299,17.700000762939453
+14-06-20 23:14:30,232 38 3273769 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.59382903337479,17.600000381469727
+14-06-20 23:14:30,232 38 3273769 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.455386649370194,17.399999618530273
+14-06-20 23:14:30,232 38 3273769 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.573994863033295,17.700000762939453
+14-06-20 23:14:30,232 38 3273769 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.34507469922304,17.299999237060547
+14-06-20 23:14:30,232 38 3273769 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.39236597895622,17.549999237060547
+14-06-20 23:14:30,232 38 3273769 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.674767008423807,17.700000762939453
+14-06-20 23:14:30,233 38 3273770 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.697049986422062,17.549999237060547
+14-06-20 23:14:30,233 38 3273770 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.66868521690369,17.450000762939453
+14-06-20 23:14:30,233 38 3273770 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.718947091698645,17.600000381469727
+14-06-20 23:14:30,233 38 3273770 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.675730909109117,17.450000762939453
+14-06-20 23:14:30,233 38 3273770 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.294095757305623,17.200000762939453
+14-06-20 23:14:30,233 38 3273770 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.31723327934742,19.149999618530273
+14-06-20 23:14:30,233 38 3273770 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 19.250696199536325,19.049999237060547
+14-06-20 23:14:30,234 38 3273771 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.81196672618389,18.649999618530273
+14-06-20 23:14:30,234 38 3273771 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.616629205942154,18.649999618530273
+14-06-20 23:14:30,234 38 3273771 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.295492491722108,18.600000381469727
+14-06-20 23:14:30,234 38 3273771 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.65990944027901,18.75
+14-06-20 23:14:30,234 38 3273771 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.605833362042905,18.350000381469727
+14-06-20 23:14:30,234 38 3273771 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.159496572017673,18.0
+14-06-20 23:14:30,234 38 3273771 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.926434134840967,18.350000381469727
+14-06-20 23:14:30,235 38 3273772 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.37690773040056,18.350000381469727
+14-06-20 23:14:30,235 38 3273772 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.383578485548497,18.399999618530273
+14-06-20 23:14:30,235 38 3273772 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.44980721116066,18.399999618530273
+14-06-20 23:14:30,235 38 3273772 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.452046678960322,18.549999237060547
+14-06-20 23:14:30,235 38 3273772 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.44659446924925,18.350000381469727
+14-06-20 23:14:30,235 38 3273772 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.52845338344574,18.600000381469727
+14-06-20 23:14:30,235 38 3273772 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.39657396018505,18.049999237060547
+14-06-20 23:14:30,236 38 3273773 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.306860114634038,18.100000381469727
+14-06-20 23:14:30,236 38 3273773 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.092065704464915,17.850000381469727
+14-06-20 23:14:30,236 38 3273773 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.86007183790207,17.549999237060547
+14-06-20 23:14:30,236 38 3273773 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.67560905456543,17.799999237060547
+14-06-20 23:14:30,236 38 3273773 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.87005219370127,17.450000762939453
+14-06-20 23:14:30,236 38 3273773 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.487589055895807,17.399999618530273
+14-06-20 23:14:30,237 38 3273774 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.27695097923279,17.549999237060547
+14-06-20 23:14:30,237 38 3273774 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.715454709231857,17.850000381469727
+14-06-20 23:14:30,238 38 3273775 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.782522356510164,17.950000762939453
+14-06-20 23:14:30,238 38 3273775 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.926885621547697,17.899999618530273
+14-06-20 23:14:30,238 38 3273775 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.077158050835134,18.25
+14-06-20 23:14:30,238 38 3273775 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.305379894375804,18.350000381469727
+14-06-20 23:14:30,238 38 3273775 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.432145332396033,18.700000762939453
+14-06-20 23:14:30,239 38 3273776 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.508020094931126,18.950000762939453
+14-06-20 23:14:30,239 38 3273776 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.740992703437804,18.700000762939453
+14-06-20 23:14:30,239 38 3273776 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.677051874995232,18.700000762939453
+14-06-20 23:14:30,240 38 3273777 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.253861199319363,18.600000381469727
+14-06-20 23:14:30,240 38 3273777 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.698677932024005,18.799999237060547
+14-06-20 23:14:30,240 38 3273777 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.469205517172814,18.600000381469727
+14-06-20 23:14:30,240 38 3273777 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.5263529548049,18.5
+14-06-20 23:14:30,240 38 3273777 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.717217007279395,18.850000381469727
+14-06-20 23:14:30,240 38 3273777 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.899929303228856,18.850000381469727
+14-06-20 23:14:30,241 38 3273778 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.75709468781948,18.799999237060547
+14-06-20 23:14:30,241 38 3273778 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.843247412443162,18.700000762939453
+14-06-20 23:14:30,241 38 3273778 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 18.797599606812,15.949999809265137
+14-06-20 23:14:30,241 38 3273778 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.070958903729917,16.0
+14-06-20 23:14:30,241 38 3273778 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.358202089071273,15.899999618530273
+14-06-20 23:14:30,241 38 3273778 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.326496474146843,15.949999809265137
+14-06-20 23:14:30,242 38 3273779 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.47769296705723,16.399999618530273
+14-06-20 23:14:30,242 38 3273779 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.220706421136857,15.800000190734863
+14-06-20 23:14:30,242 38 3273779 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.1118059527874,16.049999237060547
+14-06-20 23:14:30,242 38 3273779 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.338644434809687,16.25
+14-06-20 23:14:30,242 38 3273779 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.595096695423127,16.5
+14-06-20 23:14:30,242 38 3273779 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.821208736896516,16.950000762939453
+14-06-20 23:14:30,242 38 3273779 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.128863339424136,16.899999618530273
+14-06-20 23:14:30,243 38 3273780 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.12591071009636,16.899999618530273
+14-06-20 23:14:30,243 38 3273780 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.93480372965336,16.850000381469727
+14-06-20 23:14:30,243 38 3273780 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.975682023465634,16.950000762939453
+14-06-20 23:14:30,243 38 3273780 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.128108778595927,17.049999237060547
+14-06-20 23:14:30,243 38 3273780 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.2486822873354,17.200000762939453
+14-06-20 23:14:30,243 38 3273780 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.03543214917183,17.200000762939453
+14-06-20 23:14:30,243 38 3273780 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.274146762490275,17.399999618530273
+14-06-20 23:14:30,244 38 3273781 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.39287370622158,17.399999618530273
+14-06-20 23:14:30,244 38 3273781 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.53168555945158,17.600000381469727
+14-06-20 23:14:30,244 38 3273781 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 17.58499301671982,15.199999809265137
+14-06-20 23:14:30,244 38 3273781 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.233957618325949,15.100000381469727
+14-06-20 23:14:30,244 38 3273781 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.373083090782167,15.149999618530273
+14-06-20 23:14:30,244 38 3273781 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.409651170670987,15.25
+14-06-20 23:14:30,245 38 3273782 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.386537472754718,15.350000381469727
+14-06-20 23:14:30,245 38 3273782 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.38003973543644,15.149999618530273
+14-06-20 23:14:30,245 38 3273782 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.440296807289124,15.649999618530273
+14-06-20 23:14:30,245 38 3273782 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.747021097242833,15.699999809265137
+14-06-20 23:14:30,245 38 3273782 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.842479681521656,15.800000190734863
+14-06-20 23:14:30,245 38 3273782 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.976014686226845,15.899999618530273
+14-06-20 23:14:30,245 38 3273782 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.05267447322607,16.0
+14-06-20 23:14:30,245 38 3273782 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.079281725287437,16.0
+14-06-20 23:14:30,246 38 3273783 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.97618262678385,15.949999809265137
+14-06-20 23:14:30,246 38 3273783 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.013074871003628,16.0
+14-06-20 23:14:30,246 38 3273783 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.919740539491176,15.949999809265137
+14-06-20 23:14:30,246 38 3273783 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.11984132260084,16.350000381469727
+14-06-20 23:14:30,246 38 3273783 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.281299374103547,16.350000381469727
+14-06-20 23:14:30,246 38 3273783 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.223152885437013,16.0
+14-06-20 23:14:30,246 38 3273783 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.1012905305624,15.949999809265137
+14-06-20 23:14:30,247 38 3273784 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.022867758274078,15.949999809265137
+14-06-20 23:14:30,247 38 3273784 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 16.01996824502945,15.899999618530273
+14-06-20 23:14:30,247 38 3273784 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.78147898450494,15.649999618530273
+14-06-20 23:14:30,247 38 3273784 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.714550766944885,15.75
+14-06-20 23:14:30,247 38 3273784 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.64015895858407,15.199999809265137
+14-06-20 23:14:30,247 38 3273784 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.667336427420379,15.149999618530273
+14-06-20 23:14:30,247 38 3273784 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.380933335423471,15.100000381469727
+14-06-20 23:14:30,247 38 3273784 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.248475884199143,15.149999618530273
+14-06-20 23:14:30,248 38 3273785 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.27826463341713,15.199999809265137
+14-06-20 23:14:30,248 38 3273785 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.339373124837877,15.300000190734863
+14-06-20 23:14:30,248 38 3273785 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.38288183644414,15.350000381469727
+14-06-20 23:14:30,248 38 3273785 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.304727378487588,15.100000381469727
+14-06-20 23:14:30,248 38 3273785 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.003479512929918,15.0
+14-06-20 23:14:30,248 38 3273785 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.015120527446271,15.149999618530273
+14-06-20 23:14:30,248 38 3273785 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.201784894317388,15.350000381469727
+14-06-20 23:14:30,248 38 3273785 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.305724867284297,15.350000381469727
+14-06-20 23:14:30,249 38 3273786 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.32742122501135,15.050000190734863
+14-06-20 23:14:30,249 38 3273786 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.281745299100876,15.199999809265137
+14-06-20 23:14:30,249 38 3273786 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.2612877959013,14.949999809265137
+14-06-20 23:14:30,249 38 3273786 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.173089711517097,14.899999618530273
+14-06-20 23:14:30,249 38 3273786 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.102341822683812,14.800000190734863
+14-06-20 23:14:30,249 38 3273786 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.03181694328785,14.0
+14-06-20 23:14:30,249 38 3273786 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.213828872293234,13.899999618530273
+14-06-20 23:14:30,250 38 3273787 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.180764891654253,13.850000381469727
+14-06-20 23:14:30,250 38 3273787 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.112842309772969,13.850000381469727
+14-06-20 23:14:30,250 38 3273787 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.24263692677021,14.100000381469727
+14-06-20 23:14:30,250 38 3273787 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.413050896674395,14.100000381469727
+14-06-20 23:14:30,250 38 3273787 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.39237468019128,14.199999809265137
+14-06-20 23:14:30,250 38 3273787 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.479146050959827,14.199999809265137
+14-06-20 23:14:30,251 38 3273788 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.438727836161853,14.100000381469727
+14-06-20 23:14:30,251 38 3273788 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.488835439980031,14.350000381469727
+14-06-20 23:14:30,251 38 3273788 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.720981624722482,14.800000190734863
+14-06-20 23:14:30,251 38 3273788 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.933638893663883,14.899999618530273
+14-06-20 23:14:30,251 38 3273788 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.083881640434265,15.0
+14-06-20 23:14:30,251 38 3273788 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.01821805432439,14.899999618530273
+14-06-20 23:14:30,251 38 3273788 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.092165406048299,15.050000190734863
+14-06-20 23:14:30,252 38 3273789 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.20119007229805,15.25
+14-06-20 23:14:30,252 38 3273789 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.384268322438002,15.5
+14-06-20 23:14:30,252 38 3273789 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.594785716235638,15.649999618530273
+14-06-20 23:14:30,252 38 3273789 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.5119367338717,15.449999809265137
+14-06-20 23:14:30,252 38 3273789 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.664930190742016,15.850000381469727
+14-06-20 23:14:30,252 38 3273789 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 15.802575442939997,12.699999809265137
+14-06-20 23:14:30,252 38 3273789 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.902254911959172,12.75
+14-06-20 23:14:30,252 38 3273789 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 13.200033047497273,12.699999809265137
+14-06-20 23:14:30,253 38 3273790 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 13.20411751806736,12.600000381469727
+14-06-20 23:14:30,253 38 3273790 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 13.347779338359834,12.899999618530273
+14-06-20 23:14:30,253 38 3273790 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 13.23063884705305,12.75
+14-06-20 23:14:30,253 38 3273790 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 13.075052466094494,12.949999809265137
+14-06-20 23:14:30,253 38 3273790 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.59488873757422,12.399999618530273
+14-06-20 23:14:30,253 38 3273790 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.675539456158877,12.649999618530273
+14-06-20 23:14:30,254 38 3273791 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 13.074517790228128,13.399999618530273
+14-06-20 23:14:30,254 38 3273791 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 13.754203297495842,13.550000190734863
+14-06-20 23:14:30,254 38 3273791 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.010821545869113,13.850000381469727
+14-06-20 23:14:30,254 38 3273791 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.01283136472106,13.899999618530273
+14-06-20 23:14:30,254 38 3273791 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.159963305592537,14.100000381469727
+14-06-20 23:14:30,254 38 3273791 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.255841350704433,14.100000381469727
+14-06-20 23:14:30,254 38 3273791 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.244897484779358,14.050000190734863
+14-06-20 23:14:30,255 38 3273792 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.114258478283883,14.0
+14-06-20 23:14:30,255 38 3273792 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.002569415569306,13.899999618530273
+14-06-20 23:14:30,255 38 3273792 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.044503391534091,14.149999618530273
+14-06-20 23:14:30,255 38 3273792 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.153012519329787,14.199999809265137
+14-06-20 23:14:30,255 38 3273792 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 14.17130163654685,10.699999809265137
+14-06-20 23:14:30,255 38 3273792 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.205363605469465,11.5
+14-06-20 23:14:30,255 38 3273792 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.296337489634753,12.100000381469727
+14-06-20 23:14:30,256 38 3273793 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 13.036758504062892,12.600000381469727
+14-06-20 23:14:30,256 38 3273793 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 13.038266454041004,12.550000190734863
+14-06-20 23:14:30,256 38 3273793 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.694942839443684,12.449999809265137
+14-06-20 23:14:30,256 38 3273793 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.836069929003717,12.5
+14-06-20 23:14:30,256 38 3273793 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.71431810244918,12.399999618530273
+14-06-20 23:14:30,256 38 3273793 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.200062440857291,11.899999618530273
+14-06-20 23:14:30,257 38 3273794 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.845201895833016,11.899999618530273
+14-06-20 23:14:30,257 38 3273794 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.834958302974702,12.0
+14-06-20 23:14:30,257 38 3273794 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.879926925748588,12.100000381469727
+14-06-20 23:14:30,257 38 3273794 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.247122899964452,12.050000190734863
+14-06-20 23:14:30,257 38 3273794 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.59268578708172,12.0
+14-06-20 23:14:30,258 38 3273795 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.575629470720887,12.399999618530273
+14-06-20 23:14:30,258 38 3273795 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.605573467314244,12.300000190734863
+14-06-20 23:14:30,258 38 3273795 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.64519962757826,12.649999618530273
+14-06-20 23:14:30,258 38 3273795 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.571975591927767,12.649999618530273
+14-06-20 23:14:30,258 38 3273795 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.725373668372631,12.399999618530273
+14-06-20 23:14:30,258 38 3273795 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.579479019790888,12.350000381469727
+14-06-20 23:14:30,259 38 3273796 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.608872913420202,12.699999809265137
+14-06-20 23:14:30,259 38 3273796 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.814910981059075,12.600000381469727
+14-06-20 23:14:30,259 38 3273796 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.624879406020046,12.600000381469727
+14-06-20 23:14:30,259 38 3273796 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.45514286145568,12.399999618530273
+14-06-20 23:14:30,259 38 3273796 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.933549658358098,13.300000190734863
+14-06-20 23:14:30,259 38 3273796 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 13.377613001912833,13.149999618530273
+14-06-20 23:14:30,259 38 3273796 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.825041702240707,12.300000190734863
+14-06-20 23:14:30,260 38 3273797 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.953786886036397,12.199999809265137
+14-06-20 23:14:30,260 38 3273797 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.374133414030076,12.350000381469727
+14-06-20 23:14:30,260 38 3273797 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.434469378888608,12.300000190734863
+14-06-20 23:14:30,260 38 3273797 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.7940359698236,12.300000190734863
+14-06-20 23:14:30,260 38 3273797 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.784375482201577,12.350000381469727
+14-06-20 23:14:30,260 38 3273797 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.335586174204947,12.25
+14-06-20 23:14:30,260 38 3273797 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.02670755840838,12.100000381469727
+14-06-20 23:14:30,261 38 3273798 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.121358465775849,12.25
+14-06-20 23:14:30,261 38 3273798 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.157457679063082,11.949999809265137
+14-06-20 23:14:30,261 38 3273798 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.815351438224315,10.300000190734863
+14-06-20 23:14:30,261 38 3273798 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.170464190766216,9.989999771118164
+14-06-20 23:14:30,261 38 3273798 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.915273730047048,9.390000343322754
+14-06-20 23:14:30,261 38 3273798 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.59798275694251,9.699999809265137
+14-06-20 23:14:30,261 38 3273798 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.476330132484437,10.199999809265137
+14-06-20 23:14:30,261 38 3273798 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.879986001625658,10.350000381469727
+14-06-20 23:14:30,262 38 3273799 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.739007422290744,10.600000381469727
+14-06-20 23:14:30,262 38 3273799 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.439233723320068,10.100000381469727
+14-06-20 23:14:30,262 38 3273799 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.221696609519423,9.859999656677246
+14-06-20 23:14:30,262 38 3273799 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.335806652531028,10.600000381469727
+14-06-20 23:14:30,262 38 3273799 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.22459982931614,10.550000190734863
+14-06-20 23:14:30,262 38 3273799 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.776855658367277,11.0
+14-06-20 23:14:30,263 38 3273800 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.270295673757792,11.149999618530273
+14-06-20 23:14:30,263 38 3273800 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.646129455715418,10.800000190734863
+14-06-20 23:14:30,263 38 3273800 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.804566436111928,10.100000381469727
+14-06-20 23:14:30,263 38 3273800 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.036595456786454,10.050000190734863
+14-06-20 23:14:30,263 38 3273800 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.302046206779778,11.350000381469727
+14-06-20 23:14:30,263 38 3273800 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.369575491547586,11.5
+14-06-20 23:14:30,264 38 3273801 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.767491308674217,12.350000381469727
+14-06-20 23:14:30,264 38 3273801 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.702122884094717,12.600000381469727
+14-06-20 23:14:30,264 38 3273801 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.986361886262895,12.350000381469727
+14-06-20 23:14:30,264 38 3273801 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.452734281420708,12.449999809265137
+14-06-20 23:14:30,264 38 3273801 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.576654493957758,12.699999809265137
+14-06-20 23:14:30,264 38 3273801 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.821649302989245,12.800000190734863
+14-06-20 23:14:30,264 38 3273801 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.388956511542201,12.449999809265137
+14-06-20 23:14:30,265 38 3273802 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.322893578410149,11.949999809265137
+14-06-20 23:14:30,265 38 3273802 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.025133994445206,11.449999809265137
+14-06-20 23:14:30,265 38 3273802 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.156111420691014,12.199999809265137
+14-06-20 23:14:30,265 38 3273802 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.319061995074154,11.850000381469727
+14-06-20 23:14:30,265 38 3273802 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.498600800335408,11.899999618530273
+14-06-20 23:14:30,265 38 3273802 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.894548885151744,11.550000190734863
+14-06-20 23:14:30,265 38 3273802 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.480591425076128,10.800000190734863
+14-06-20 23:14:30,266 38 3273803 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.17391068249941,10.649999618530273
+14-06-20 23:14:30,266 38 3273803 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.648062533400953,10.649999618530273
+14-06-20 23:14:30,266 38 3273803 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.915332899801435,10.899999618530273
+14-06-20 23:14:30,266 38 3273803 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.283149765878916,10.75
+14-06-20 23:14:30,266 38 3273803 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.147439930960537,10.649999618530273
+14-06-20 23:14:30,266 38 3273803 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 11.45008111730218,10.800000190734863
+14-06-20 23:14:30,267 38 3273804 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 10.76815487291664,12.550000190734863
+14-06-20 23:14:30,267 38 3273804 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.68541318923235,12.5
+14-06-20 23:14:30,267 38 3273804 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.785977166444063,13.0
+14-06-20 23:14:30,267 38 3273804 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.598269224762918,12.5
+14-06-20 23:14:30,267 38 3273804 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.840867561101915,12.350000381469727
+14-06-20 23:14:30,267 38 3273804 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.826091135442258,12.550000190734863
+14-06-20 23:14:30,267 38 3273804 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.67581831559539,12.550000190734863
+14-06-20 23:14:30,268 38 3273805 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.649677782058717,12.300000190734863
+14-06-20 23:14:30,268 38 3273805 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.789792151004077,12.350000381469727
+14-06-20 23:14:30,268 38 3273805 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.483819492682816,12.300000190734863
+14-06-20 23:14:30,268 38 3273805 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.421624269634485,12.449999809265137
+14-06-20 23:14:30,268 38 3273805 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.577876944988967,12.550000190734863
+14-06-20 23:14:30,268 38 3273805 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.808912769258022,12.699999809265137
+14-06-20 23:14:30,269 38 3273806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.585445986837149,12.25
+14-06-20 23:14:30,269 38 3273806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.591677362620832,12.050000190734863
+14-06-20 23:14:30,269 38 3273806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.412813248783351,12.149999618530273
+14-06-20 23:14:30,269 38 3273806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.335657256022095,11.949999809265137
+14-06-20 23:14:30,269 38 3273806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - 12.44436303049326,12.100000381469727
+14-06-20 23:14:30,269 38 3273806 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Plot...
+14-06-20 23:14:31,505 38 3275042 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Done...
+14-06-20 23:23:14,807 38 0    [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Create dataSet iterator...
+14-06-20 23:23:15,554 590 747  [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@50d0686: startup date [Sun Jun 14 23:23:15 ICT 2020]; root of context hierarchy
+14-06-20 23:23:15,870 316 1063 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:.//config/Beans.xml]
+14-06-20 23:23:16,598 80 1791 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Starting...
+14-06-20 23:23:17,257 82 2450 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Start completed.
+14-06-20 23:23:17,955 66 3148 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+14-06-20 23:23:17,972 54 3165 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.7.Final}
+14-06-20 23:23:17,978 239 3171 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+14-06-20 23:23:17,982 346 3175 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+14-06-20 23:23:18,355 145 3548 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14-06-20 23:23:18,749 62 3942 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+14-06-20 23:23:18,762 47 3955 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+14-06-20 23:23:18,860 21 4053 [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.9.Final
+14-06-20 23:23:22,925 38 8118 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load test dataset...
+14-06-20 23:23:22,929 38 8122 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Build lstm networks...
+14-06-20 23:23:23,007 194 8200 [main] INFO  org.nd4j.linalg.factory.Nd4jBackend  - Loaded [CpuBackend] backend
+14-06-20 23:23:24,884 229 10077 [main] INFO  org.reflections.Reflections  - Reflections took 1789 ms to scan 323 urls, producing 130798 keys and 144333 values 
+14-06-20 23:23:25,241 49 10434 [main] INFO  org.nd4j.nativeblas.NativeOpsHolder  - Number of threads used for NativeOps: 2
+14-06-20 23:23:25,344 229 10537 [main] INFO  org.reflections.Reflections  - Reflections took 97 ms to scan 10 urls, producing 31 keys and 227 values 
+14-06-20 23:23:25,736 37 10929 [main] INFO  org.nd4j.nativeblas.Nd4jBlas  - Number of threads used for BLAS: 2
+14-06-20 23:23:25,739 565 10932 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Backend used: [CPU]; OS: [Mac OS X]
+14-06-20 23:23:25,740 566 10933 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Cores: [4]; Memory: [2.2GB];
+14-06-20 23:23:25,747 567 10940 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Blas vendor: [OPENBLAS]
+14-06-20 23:23:35,691 229 20884 [main] INFO  org.reflections.Reflections  - Reflections took 9531 ms to scan 313 urls, producing 7215 keys and 41552 values 
+14-06-20 23:23:35,833 56 21026 [main] INFO  org.deeplearning4j.nn.multilayer.MultiLayerNetwork  - Starting MultiLayerNetwork with WorkspaceModes set to [training: NONE; inference: SEPARATE]
+14-06-20 23:23:36,040 229 21233 [main] INFO  org.reflections.Reflections  - Reflections took 142 ms to scan 10 urls, producing 387 keys and 1538 values 
+14-06-20 23:23:36,123 38 21316 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Training...
+14-06-20 23:23:36,124 38 21317 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Saving model...
+14-06-20 23:23:36,859 38 22052 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load model...
+14-06-20 23:23:37,159 38 22352 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Testing...
+14-06-20 23:23:37,160 38 22353 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Test data size:0
+14-06-20 23:23:37,241 38 22434 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Data Json:[]
+14-06-20 23:23:37,241 38 22434 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Print out Predictions and Actual Values...
+14-06-20 23:23:37,242 38 22435 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Predict,Actual
+14-06-20 23:23:37,242 38 22435 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Plot...
+14-06-20 23:26:15,907 38 0    [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Create dataSet iterator...
+14-06-20 23:26:16,867 590 960  [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@50d0686: startup date [Sun Jun 14 23:26:16 ICT 2020]; root of context hierarchy
+14-06-20 23:26:17,148 316 1241 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:.//config/Beans.xml]
+14-06-20 23:26:18,384 80 2477 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Starting...
+14-06-20 23:26:19,884 82 3977 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Start completed.
+14-06-20 23:26:20,821 66 4914 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+14-06-20 23:26:20,844 54 4937 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.7.Final}
+14-06-20 23:26:20,851 239 4944 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+14-06-20 23:26:20,857 346 4950 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+14-06-20 23:26:21,245 145 5338 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14-06-20 23:26:21,708 62 5801 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+14-06-20 23:26:21,720 47 5813 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+14-06-20 23:26:21,814 21 5907 [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.9.Final
+14-06-20 23:26:25,840 38 9933 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load test dataset...
+14-06-20 23:26:25,841 38 9934 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Build lstm networks...
+14-06-20 23:26:25,900 194 9993 [main] INFO  org.nd4j.linalg.factory.Nd4jBackend  - Loaded [CpuBackend] backend
+14-06-20 23:26:27,069 229 11162 [main] INFO  org.reflections.Reflections  - Reflections took 1117 ms to scan 323 urls, producing 130798 keys and 144333 values 
+14-06-20 23:26:27,811 49 11904 [main] INFO  org.nd4j.nativeblas.NativeOpsHolder  - Number of threads used for NativeOps: 2
+14-06-20 23:26:27,932 229 12025 [main] INFO  org.reflections.Reflections  - Reflections took 115 ms to scan 10 urls, producing 31 keys and 227 values 
+14-06-20 23:26:28,270 37 12363 [main] INFO  org.nd4j.nativeblas.Nd4jBlas  - Number of threads used for BLAS: 2
+14-06-20 23:26:28,273 565 12366 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Backend used: [CPU]; OS: [Mac OS X]
+14-06-20 23:26:28,273 566 12366 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Cores: [4]; Memory: [2.2GB];
+14-06-20 23:26:28,274 567 12367 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Blas vendor: [OPENBLAS]
+14-06-20 23:26:38,984 229 23077 [main] INFO  org.reflections.Reflections  - Reflections took 10058 ms to scan 313 urls, producing 7215 keys and 41552 values 
+14-06-20 23:26:39,116 56 23209 [main] INFO  org.deeplearning4j.nn.multilayer.MultiLayerNetwork  - Starting MultiLayerNetwork with WorkspaceModes set to [training: NONE; inference: SEPARATE]
+14-06-20 23:26:39,323 229 23416 [main] INFO  org.reflections.Reflections  - Reflections took 151 ms to scan 10 urls, producing 387 keys and 1538 values 
+14-06-20 23:26:39,418 38 23511 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Training...
+14-06-20 23:26:39,418 38 23511 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Saving model...
+14-06-20 23:26:40,096 38 24189 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load model...
+14-06-20 23:26:40,322 38 24415 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Testing...
+14-06-20 23:26:40,323 38 24416 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Test data size:0
+14-06-20 23:26:40,409 38 24502 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Data Json:[]
+14-06-20 23:26:40,409 38 24502 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Print out Predictions and Actual Values...
+14-06-20 23:26:40,409 38 24502 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Predict,Actual
+14-06-20 23:26:40,410 38 24503 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Plot...
+14-06-20 23:27:15,037 38 0    [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Create dataSet iterator...
+14-06-20 23:27:15,758 590 721  [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@50d0686: startup date [Sun Jun 14 23:27:15 ICT 2020]; root of context hierarchy
+14-06-20 23:27:15,960 316 923  [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:.//config/Beans.xml]
+14-06-20 23:27:16,539 80 1502 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Starting...
+14-06-20 23:27:17,375 82 2338 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Start completed.
+14-06-20 23:27:18,055 66 3018 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+14-06-20 23:27:18,075 54 3038 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.7.Final}
+14-06-20 23:27:18,082 239 3045 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+14-06-20 23:27:18,087 346 3050 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+14-06-20 23:27:18,530 145 3493 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14-06-20 23:27:18,922 62 3885 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+14-06-20 23:27:18,930 47 3893 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+14-06-20 23:27:19,017 21 3980 [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.9.Final
+14-06-20 23:27:23,034 38 7997 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load test dataset...
+14-06-20 23:27:23,034 38 7997 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Build lstm networks...
+14-06-20 23:27:23,123 194 8086 [main] INFO  org.nd4j.linalg.factory.Nd4jBackend  - Loaded [CpuBackend] backend
+14-06-20 23:27:24,548 229 9511 [main] INFO  org.reflections.Reflections  - Reflections took 1340 ms to scan 323 urls, producing 130798 keys and 144333 values 
+14-06-20 23:27:25,528 49 10491 [main] INFO  org.nd4j.nativeblas.NativeOpsHolder  - Number of threads used for NativeOps: 2
+14-06-20 23:27:25,839 229 10802 [main] INFO  org.reflections.Reflections  - Reflections took 304 ms to scan 10 urls, producing 31 keys and 227 values 
+14-06-20 23:27:26,210 37 11173 [main] INFO  org.nd4j.nativeblas.Nd4jBlas  - Number of threads used for BLAS: 2
+14-06-20 23:27:26,213 565 11176 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Backend used: [CPU]; OS: [Mac OS X]
+14-06-20 23:27:26,214 566 11177 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Cores: [4]; Memory: [2.2GB];
+14-06-20 23:27:26,214 567 11177 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Blas vendor: [OPENBLAS]
+14-06-20 23:27:36,180 229 21143 [main] INFO  org.reflections.Reflections  - Reflections took 9540 ms to scan 313 urls, producing 7215 keys and 41552 values 
+14-06-20 23:27:36,311 56 21274 [main] INFO  org.deeplearning4j.nn.multilayer.MultiLayerNetwork  - Starting MultiLayerNetwork with WorkspaceModes set to [training: NONE; inference: SEPARATE]
+14-06-20 23:27:36,630 229 21593 [main] INFO  org.reflections.Reflections  - Reflections took 236 ms to scan 10 urls, producing 387 keys and 1538 values 
+14-06-20 23:27:36,751 38 21714 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Training...
+14-06-20 23:27:36,751 38 21714 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Saving model...
+14-06-20 23:27:37,392 38 22355 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load model...
+14-06-20 23:27:37,684 38 22647 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Testing...
+14-06-20 23:27:37,694 38 22657 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Test data size:0
+14-06-20 23:27:37,861 38 22824 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Data Json:[]
+14-06-20 23:27:37,862 38 22825 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Print out Predictions and Actual Values...
+14-06-20 23:27:37,862 38 22825 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Predict,Actual
+14-06-20 23:27:37,862 38 22825 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Plot...
+14-06-20 23:28:17,755 38 0    [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Create dataSet iterator...
+14-06-20 23:28:18,526 590 771  [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@50d0686: startup date [Sun Jun 14 23:28:18 ICT 2020]; root of context hierarchy
+14-06-20 23:28:18,941 316 1186 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:.//config/Beans.xml]
+14-06-20 23:28:19,797 80 2042 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Starting...
+14-06-20 23:28:20,384 82 2629 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Start completed.
+14-06-20 23:28:20,994 66 3239 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+14-06-20 23:28:21,006 54 3251 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.7.Final}
+14-06-20 23:28:21,010 239 3255 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+14-06-20 23:28:21,014 346 3259 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+14-06-20 23:28:21,398 145 3643 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14-06-20 23:28:21,793 62 4038 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+14-06-20 23:28:21,801 47 4046 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+14-06-20 23:28:21,892 21 4137 [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.9.Final
+14-06-20 23:28:26,020 38 8265 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load test dataset...
+14-06-20 23:28:26,026 38 8271 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Build lstm networks...
+14-06-20 23:28:26,090 194 8335 [main] INFO  org.nd4j.linalg.factory.Nd4jBackend  - Loaded [CpuBackend] backend
+14-06-20 23:28:27,625 229 9870 [main] INFO  org.reflections.Reflections  - Reflections took 1453 ms to scan 323 urls, producing 130798 keys and 144333 values 
+14-06-20 23:28:28,498 49 10743 [main] INFO  org.nd4j.nativeblas.NativeOpsHolder  - Number of threads used for NativeOps: 2
+14-06-20 23:28:28,633 229 10878 [main] INFO  org.reflections.Reflections  - Reflections took 128 ms to scan 10 urls, producing 31 keys and 227 values 
+14-06-20 23:28:29,079 37 11324 [main] INFO  org.nd4j.nativeblas.Nd4jBlas  - Number of threads used for BLAS: 2
+14-06-20 23:28:29,082 565 11327 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Backend used: [CPU]; OS: [Mac OS X]
+14-06-20 23:28:29,082 566 11327 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Cores: [4]; Memory: [2.2GB];
+14-06-20 23:28:29,083 567 11328 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Blas vendor: [OPENBLAS]
+14-06-20 23:28:38,852 229 21097 [main] INFO  org.reflections.Reflections  - Reflections took 9493 ms to scan 313 urls, producing 7215 keys and 41552 values 
+14-06-20 23:28:38,993 56 21238 [main] INFO  org.deeplearning4j.nn.multilayer.MultiLayerNetwork  - Starting MultiLayerNetwork with WorkspaceModes set to [training: NONE; inference: SEPARATE]
+14-06-20 23:28:39,206 229 21451 [main] INFO  org.reflections.Reflections  - Reflections took 145 ms to scan 10 urls, producing 387 keys and 1538 values 
+14-06-20 23:28:39,292 38 21537 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Training...
+14-06-20 23:28:40,055 64 22300 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 0 is 2.8030273282215816
+14-06-20 23:29:22,344 38 64589 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Saving model...
+14-06-20 23:29:23,143 38 65388 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load model...
+14-06-20 23:29:23,385 38 65630 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Testing...
+14-06-20 23:29:23,386 38 65631 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Test data size:0
+14-06-20 23:29:23,470 38 65715 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Data Json:[]
+14-06-20 23:29:23,471 38 65716 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Print out Predictions and Actual Values...
+14-06-20 23:29:23,471 38 65716 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Predict,Actual
+14-06-20 23:29:23,471 38 65716 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Plot...
+14-06-20 23:29:38,382 38 0    [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Create dataSet iterator...
+14-06-20 23:29:38,928 590 546  [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@50d0686: startup date [Sun Jun 14 23:29:38 ICT 2020]; root of context hierarchy
+14-06-20 23:29:39,081 316 699  [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:.//config/Beans.xml]
+14-06-20 23:29:39,667 80 1285 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Starting...
+14-06-20 23:29:40,203 82 1821 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Start completed.
+14-06-20 23:29:40,817 66 2435 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+14-06-20 23:29:40,843 54 2461 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.7.Final}
+14-06-20 23:29:40,852 239 2470 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+14-06-20 23:29:40,856 346 2474 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+14-06-20 23:29:41,228 145 2846 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14-06-20 23:29:41,610 62 3228 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+14-06-20 23:29:41,621 47 3239 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+14-06-20 23:29:41,744 21 3362 [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.9.Final
+14-06-20 23:29:45,738 38 7356 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load test dataset...
+14-06-20 23:29:45,738 38 7356 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Build lstm networks...
+14-06-20 23:29:45,838 194 7456 [main] INFO  org.nd4j.linalg.factory.Nd4jBackend  - Loaded [CpuBackend] backend
+14-06-20 23:29:47,353 229 8971 [main] INFO  org.reflections.Reflections  - Reflections took 1426 ms to scan 323 urls, producing 130798 keys and 144333 values 
+14-06-20 23:29:48,147 49 9765 [main] INFO  org.nd4j.nativeblas.NativeOpsHolder  - Number of threads used for NativeOps: 2
+14-06-20 23:29:48,254 229 9872 [main] INFO  org.reflections.Reflections  - Reflections took 103 ms to scan 10 urls, producing 31 keys and 227 values 
+14-06-20 23:29:48,586 37 10204 [main] INFO  org.nd4j.nativeblas.Nd4jBlas  - Number of threads used for BLAS: 2
+14-06-20 23:29:48,594 565 10212 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Backend used: [CPU]; OS: [Mac OS X]
+14-06-20 23:29:48,594 566 10212 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Cores: [4]; Memory: [2.2GB];
+14-06-20 23:29:48,594 567 10212 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Blas vendor: [OPENBLAS]
+14-06-20 23:29:58,364 229 19982 [main] INFO  org.reflections.Reflections  - Reflections took 9409 ms to scan 313 urls, producing 7215 keys and 41552 values 
+14-06-20 23:29:58,491 56 20109 [main] INFO  org.deeplearning4j.nn.multilayer.MultiLayerNetwork  - Starting MultiLayerNetwork with WorkspaceModes set to [training: NONE; inference: SEPARATE]
+14-06-20 23:29:58,718 229 20336 [main] INFO  org.reflections.Reflections  - Reflections took 174 ms to scan 10 urls, producing 387 keys and 1538 values 
+14-06-20 23:29:58,802 38 20420 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Training...
+14-06-20 23:30:00,028 64 21646 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 0 is 13.939486860015785
+14-06-20 23:31:06,779 64 88397 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 100 is 0.9249364261153512
+14-06-20 23:32:03,164 38 144782 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Saving model...
+14-06-20 23:32:04,033 38 145651 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load model...
+14-06-20 23:32:04,374 38 145992 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Testing...
+14-06-20 23:32:04,375 38 145993 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Test data size:0
+14-06-20 23:32:04,455 38 146073 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Data Json:[]
+14-06-20 23:32:04,455 38 146073 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Print out Predictions and Actual Values...
+14-06-20 23:32:04,456 38 146074 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Predict,Actual
+14-06-20 23:32:04,456 38 146074 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Plot...
+14-06-20 23:33:37,675 38 0    [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Create dataSet iterator...
+14-06-20 23:33:38,205 590 530  [main] INFO  org.springframework.context.support.FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@50d0686: startup date [Sun Jun 14 23:33:38 ICT 2020]; root of context hierarchy
+14-06-20 23:33:38,374 316 699  [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from URL [file:.//config/Beans.xml]
+14-06-20 23:33:38,981 80 1306 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Starting...
+14-06-20 23:33:39,530 82 1855 [main] INFO  com.zaxxer.hikari.HikariDataSource  - springHikariCP - Start completed.
+14-06-20 23:33:40,113 66 2438 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+14-06-20 23:33:40,126 54 2451 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.7.Final}
+14-06-20 23:33:40,131 239 2456 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+14-06-20 23:33:40,133 346 2458 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+14-06-20 23:33:40,525 145 2850 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14-06-20 23:33:40,931 62 3256 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+14-06-20 23:33:40,942 47 3267 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+14-06-20 23:33:41,026 21 3351 [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.9.Final
+14-06-20 23:33:45,980 194 8305 [main] INFO  org.nd4j.linalg.factory.Nd4jBackend  - Loaded [CpuBackend] backend
+14-06-20 23:33:47,254 229 9579 [main] INFO  org.reflections.Reflections  - Reflections took 1223 ms to scan 323 urls, producing 130798 keys and 144333 values 
+14-06-20 23:33:48,057 49 10382 [main] INFO  org.nd4j.nativeblas.NativeOpsHolder  - Number of threads used for NativeOps: 2
+14-06-20 23:33:48,170 229 10495 [main] INFO  org.reflections.Reflections  - Reflections took 105 ms to scan 10 urls, producing 31 keys and 227 values 
+14-06-20 23:33:48,504 37 10829 [main] INFO  org.nd4j.nativeblas.Nd4jBlas  - Number of threads used for BLAS: 2
+14-06-20 23:33:48,507 565 10832 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Backend used: [CPU]; OS: [Mac OS X]
+14-06-20 23:33:48,507 566 10832 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Cores: [4]; Memory: [2.2GB];
+14-06-20 23:33:48,507 567 10832 [main] INFO  org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner  - Blas vendor: [OPENBLAS]
+14-06-20 23:33:48,962 229 11287 [main] INFO  org.reflections.Reflections  - Reflections took 413 ms to scan 10 urls, producing 387 keys and 1538 values 
+14-06-20 23:33:49,038 38 11363 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Load test dataset...
+14-06-20 23:33:49,038 38 11363 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Build lstm networks...
+14-06-20 23:33:58,982 229 21307 [main] INFO  org.reflections.Reflections  - Reflections took 9541 ms to scan 313 urls, producing 7215 keys and 41552 values 
+14-06-20 23:33:59,086 56 21411 [main] INFO  org.deeplearning4j.nn.multilayer.MultiLayerNetwork  - Starting MultiLayerNetwork with WorkspaceModes set to [training: NONE; inference: SEPARATE]
+14-06-20 23:33:59,186 38 21511 [main] INFO  com.isaac.stock.predict.StockPricePrediction  - Training...
+14-06-20 23:34:00,357 64 22682 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 0 is 0.5160658347396011
+14-06-20 23:35:27,881 64 110206 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 100 is 0.38738902056201047
+14-06-20 23:36:47,390 64 189715 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 200 is 0.06516927860771894
+14-06-20 23:38:03,983 64 266308 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 300 is 0.027508826016397005
+14-06-20 23:39:21,006 64 343331 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 400 is 0.012067860658216323
+14-06-20 23:40:39,379 64 421704 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 500 is 0.06940459042961132
+14-06-20 23:41:56,378 64 498703 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 600 is 0.01127391631266302
+14-06-20 23:43:11,550 64 573875 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 700 is 0.00794124044997445
+14-06-20 23:44:27,060 64 649385 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 800 is 0.08988364380366283
+14-06-20 23:45:42,212 64 724537 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 900 is 0.10611653546446308
+14-06-20 23:47:13,269 64 815594 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1000 is 0.1743523647205856
+14-06-20 23:48:35,940 64 898265 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1100 is 0.06264141619927545
+14-06-20 23:49:56,219 64 978544 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1200 is 0.15788011758061443
+14-06-20 23:51:16,232 64 1058557 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1300 is 0.005267636630156898
+14-06-20 23:52:40,147 64 1142472 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1400 is 0.17668695620734196
+14-06-20 23:54:03,409 64 1225734 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1500 is 0.017457045261198935
+14-06-20 23:55:22,646 64 1304971 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1600 is 0.010727507701127454
+14-06-20 23:56:42,651 64 1384976 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1700 is 0.07480282317369422
+14-06-20 23:58:02,198 64 1464523 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1800 is 0.06412573617007954
+14-06-20 23:59:22,501 64 1544826 [main] INFO  org.deeplearning4j.optimize.listeners.ScoreIterationListener  - Score at iteration 1900 is 0.09417742292762006

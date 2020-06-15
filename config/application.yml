@@ -1,0 +1,16 @@
+app.spring:
+    profiles: prod
+app.name: prod-YAML
+app.environment: test
+app.servers: 
+    - www.abc.com
+    - www.xyz.com
+app.listen_port: 8085
+app.server.tomcat.max-threads: 300
+app.time_to_reload: 10000
+server.tomcat.max-threads: 300
+app.schedule: 
+    #- springboot.schedule.ScheduleReloadConfig,1,0
+    #- springboot.schedule.ScheduleAlert,0,120000
+    - springboot.schedule.ScheduleCheckPending,0,120000
+    - springboot.schedule.ScheduleCallback,0,120000

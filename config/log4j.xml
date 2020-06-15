@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+	<appender name="CA" class="org.apache.log4j.ConsoleAppender">
+		<param name="Threshold" value="error" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd-MM-yy HH:mm:ss,SSS} %L %-4r %-5p %c %x - %m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="BackEndFatal" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="./log/app_log/fatal.log" />
+		<param name="Threshold" value="FATAL" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd-MM-yy HH:mm:ss,SSS} %L %-4r [%t] %-5p %c %x - %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelMatchFilter">
+			<param name="LevelToMatch" value="fatal" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+		<filter class="org.apache.log4j.varia.DenyAllFilter" />
+	</appender>
+	<appender name="BackEndInfo" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="./log/app_log/info.log" />
+		<param name="Threshold" value="info" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd-MM-yy HH:mm:ss,SSS} %L %-4r [%t] %-5p %c %x - %m%n" />
+		</layout>
+
+		<filter class="org.apache.log4j.varia.LevelMatchFilter">
+			<param name="LevelToMatch" value="info" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+
+	</appender>
+	<appender name="BackEndError" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="./log/app_log/error.log" />
+		<param name="Threshold" value="error" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd-MM-yy HH:mm:ss,SSS} %L %-4r [%t] %-5p %c %x - %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelMatchFilter">
+			<param name="LevelToMatch" value="error" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+	</appender>
+	<appender name="BackEndDebug" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="./log/app_log/debug.log" />
+		<param name="Threshold" value="debug" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd-MM-yy HH:mm:ss,SSS} %L %-4r [%t] %-5p %c %x - %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelMatchFilter">
+			<param name="LevelToMatch" value="debug" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+	</appender>
+
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="CA" />
+		<appender-ref ref="BackEndFatal" />
+		<appender-ref ref="BackEndInfo" />
+		<appender-ref ref="BackEndError" />
+		<!-- <appender-ref ref="BackEndDebug" /> -->
+
+	</root>
+</log4j:configuration>

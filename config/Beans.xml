@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+	<bean id="LogManager" class="springboot.logs.Logs"
+		scope="prototype"></bean>
+
+	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+		<property name="poolName" value="springHikariCP" />
+		<property name="connectionTestQuery"
+			value="select 1 from dual" />
+		<property name="dataSourceClassName"
+			value="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" />
+		<property name="maximumPoolSize" value="20" />
+		<property name="idleTimeout" value="30000" />
+		<property name="maxLifetime" value="0" />
+		<property name="connectionTimeout" value="30000" />
+		<property name="validationTimeout" value="10000" />
+		<property name="dataSourceProperties">
+			<props>
+				<!-- <prop key="url">jdbc:mysql://171.244.141.108:3306/card_gateway </prop> 
+					<prop key="user">card_gateway</prop> <prop key="password">1234567890A</prop> -->
+				<prop key="url">jdbc:mysql://localhost:3306/card_gateway</prop>
+				<prop key="user">card_gateway</prop>
+				<prop key="password">123456Aa@</prop>
+
+				<!-- <prop key="url">jdbc:mysql://192.168.0.112:3306/card_gateway</prop> 
+					<prop key="user">root</prop> <prop key="password">123</prop> -->
+			</props>
+		</property>
+	</bean>
+	<bean id="dataSourceHikari"
+		class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+		<constructor-arg ref="hikariConfig" />
+	</bean>
+
+
+	<bean id="hibernate4AnnotatedSessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSourceHikari" />
+		<property name="packagesToScan"
+			value="com.isaac.stock.entities" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.connection.SetBigStringTryClob">true</prop>
+				<prop key="hibernate.jdbc.batch_size">0</prop>
+				<prop key="hibernate.cache.use_query_cache">false</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

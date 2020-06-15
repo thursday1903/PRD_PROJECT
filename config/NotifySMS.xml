@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:int="http://Interface.notify">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <int:sendSMS soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <serviceNumber xsi:type="xsd:string">1</serviceNumber>
+         <commandCode xsi:type="xsd:string">2</commandCode>
+         <smsReceives xsi:type="xsd:string">{receiver}</smsReceives>
+         <smsContent xsi:type="xsd:string">{content}</smsContent>
+      </int:sendSMS>
+   </soapenv:Body>
+</soapenv:Envelope>
